@@ -1,0 +1,127 @@
+.header {
+    @extend %rubik-500;
+    line-height: 12px;
+    font-size: 15px;
+    padding: 50px 0;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.menu {
+    &__list {
+        display: flex;
+    }
+    &__item + &__item {
+        padding-left: 32px;
+    }
+}
+
+.user-nav {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    &__search {
+        border-radius: 50%;
+        background-color: #edf1f4;
+        padding: 17px;
+    }
+    &__burger {
+        width: 50px;
+        height: 50px;
+        background-color: $gray;
+        border-radius: 50%;
+        cursor: pointer;
+        position: relative;
+        span {
+            width: 5px;
+            height: 5px;
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        span:nth-child(1) {
+            left: 12px;
+            top: 13px;
+        }
+
+        span:nth-child(2) {
+            left: 22px;
+            top: 13px;
+        }
+
+        span:nth-child(3) {
+            right: 12px;
+            top: 13px;
+        }
+
+        span:nth-child(4) {
+            left: 12px;
+            top: 23px;
+        }
+
+        span:nth-child(5) {
+            left: 22px;
+            top: 23px;
+        }
+
+        span:nth-child(6) {
+            right: 12px;
+            top: 23px;
+        }
+
+        span:nth-child(7) {
+            left: 12px;
+            top: 33px;
+        }
+
+        span:nth-child(8) {
+            left: 22px;
+            top: 33px;
+        }
+
+        span:nth-child(9) {
+            right: 12px;
+            top: 33px;
+        }
+    }
+}
+
+.user-wrapper {
+    background-color: $background;
+    padding: 10px 40px;
+    width: 180px;    
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__divider {
+        background-color: #fde7d3;
+        width: 1px;
+        height: 32px;
+    }
+    &__link {
+        position: relative;
+    }
+    &__num {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 20px;
+        top: -10px;
+        font-size: 12px;
+        right: -14px;
+        background-color: #fff;
+        color: $main;
+    }
+}
+
+
+  
+
+  
