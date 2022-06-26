@@ -1,0 +1,60 @@
+.top-slider {
+    background-color: $background;
+    padding: 225px 0 45px;
+    
+    &__flex-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        background-image: url('../../images/slider/top-slider-bg.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right center;
+    }
+    &__title {
+        @extend %rubik-500;
+        font-size: 72px;
+        line-height: 70px;
+    }
+    &__text {
+        max-width: 370px;
+        margin-top: 40px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    &__link {
+        padding: 25px 100px 25px 25px;
+        background-color: $gray;
+        color: #fff;
+        @extend %rubik-500;
+        margin-top: 45px;
+        display: inline-block;
+        background-image: url('../../images/slider/btn-arrow.svg');
+        background-repeat: no-repeat;
+        background-position: 160px center;
+    }
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+    }
+    .slick-dots li {
+        margin: 0 10px;
+    }
+    .slick-dots li button {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        font-size: 10px;
+        border-radius: 50%;
+        color: $cobalt;
+        @extend %rubik-500;
+        background-color: rgba(255, 255, 255, .3);
+    }
+    .slick-dots li.slick-active button {
+        background-color: #fff;
+    }
+}
+
